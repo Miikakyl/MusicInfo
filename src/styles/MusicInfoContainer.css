@@ -1,0 +1,33 @@
+.musicInfoContainer {
+    margin-top: 20px;
+    width: 730px;
+    height: 700px;
+}
+
+.artistName {
+    margin-bottom: 4px;
+}
+
+.artistName>h2 {
+    color: White;
+    font-size: 40px;
+    text-align: center;
+}
+
+.albums {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.artistName {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303031;
+    border-radius: 5px;
+}

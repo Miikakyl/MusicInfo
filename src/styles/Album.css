@@ -1,0 +1,16 @@
+.albumInfoShow {
+    background-color: rgba(48, 48, 49, 0.404);
+    width: 174px;
+    height: 174px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albumTitle {
+    text-align: center;
+    font-size: 16px;
+    user-select: none;
+    color: White;
+}

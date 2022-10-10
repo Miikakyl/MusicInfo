@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 100%;
+    background: #303031;
+    margin: 0px;
+}
+
+#copyright {
+    margin: 0;
+    color: white;
+}

@@ -1,0 +1,38 @@
+.musicSearch {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #303031;
+}
+
+#searchInput {
+    color: white;
+    border: 1px solid #8093C9;
+    padding: 0px;
+    padding-left: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 400px;
+    height: 30px;
+    background-color: #303031;
+}
+
+#searchButton {
+    border: none;
+    padding: 0px;
+    margin: 5px;
+    margin-left: 0px;
+    background-color: #303031;
+    color: #8093C9;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+
+#searchButton:hover {
+    background-color: #8093C9;
+    color: #303031;
+}
