@@ -6,7 +6,7 @@ const ArtistInfo = (props) => {
 
     useEffect(() => {
 
-        if (props.artistInfo.artist !== undefined) {
+        if (props.artistInfo !== undefined) {
 
             let slicedContent = props.artistInfo.artist.bio.content.slice(0, props.artistInfo.artist.bio.content.indexOf("<a href"))
             setContent(slicedContent)

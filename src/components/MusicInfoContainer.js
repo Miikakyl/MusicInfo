@@ -37,7 +37,8 @@ const MusicInfoContainer = (props) => {
         <div className="musicInfoContainer">
             <div className="artistName">
                 {   
-                    props.artistData? <ArtistName name={props.artistData.artist.name}/>
+                    props.artistData
+                    ?<ArtistName name={props.artistData.artist.name}/>
                     :<ArtistName name={"This artist doesn't exist"}/> 
                 }
             </div>
@@ -49,7 +50,8 @@ const MusicInfoContainer = (props) => {
                 }
             </div>
             {
-                props.artisData? <ArtistInfo/>
+                props.artisData
+                ? <ArtistInfo artistInfo={undefined}/>
                 : <ArtistInfo artistInfo={props.artistData} albumError={albumError}/>    
             }
         </div>
