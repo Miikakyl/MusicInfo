@@ -9,10 +9,9 @@ const MusicInfoContainer = (props) => {
 
     const [albumObjectArray, setalbumObjectArray] = useState([])
     const [albumError, setAlbumError] = useState(false)
-
     useEffect(() => {
 
-        if (!(props.albumData.topalbums.album.length == 1 && props.albumData.topalbums.album[0].name == "(null)")) {
+        if (!(props.albumData.topalbums.album.length === 1 && props.albumData.topalbums.album[0].name === "(null)")) {
             let albumCopyArr = new Array()
             for (let i = 0; i < props.albumData.topalbums.album.length; i++) {
                 if (i > 7) {
@@ -37,7 +36,10 @@ const MusicInfoContainer = (props) => {
     return (
         <div className="musicInfoContainer">
             <div className="artistName">
-                <ArtistName name={props.artistData.artist.name} />
+                {   
+                    props.artistData? <ArtistName name={props.artistData.artist.name}/>
+                    :<ArtistName name={"This artist doesn't exist"}/> 
+                }
             </div>
             <div className="albums">
                 {
@@ -46,7 +48,10 @@ const MusicInfoContainer = (props) => {
                     })
                 }
             </div>
-            <ArtistInfo artistInfo={props.artistData} albumError={albumError}/>
+            {
+                props.artisData? <ArtistInfo/>
+                : <ArtistInfo artistInfo={props.artistData} albumError={albumError}/>    
+            }
         </div>
     );
 }

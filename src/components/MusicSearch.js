@@ -37,9 +37,6 @@ const MusicSearch = () => {
             setArtistData(response.data)
           }
         }
-        else {
-          alert(response.data.message)
-        }
       }).catch(error => {
         alert(error)
       })
@@ -49,7 +46,7 @@ const MusicSearch = () => {
     <div className='mainPage'>
       <h1>MusicInfo</h1>
       <SearchInput handleFunction={handleInput} setInput={setInput} />
-      {albumData ? albumData !== null && <MusicInfoContainer albumData={albumData} artistData={artistData} /> : ""}
+      {albumData? albumData !== null && <MusicInfoContainer albumData={albumData} artistData={artistData} /> : ""}
     </div>
   )
 }
