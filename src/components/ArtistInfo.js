@@ -4,9 +4,10 @@ import '../styles/ArtistInfo.css'
 const ArtistInfo = (props) => {
     const [content, setContent] = useState("")
 
+    console.log(props.artistInfo)
     useEffect(() => {
 
-        if (props.artistInfo !== undefined) {
+        if (!(props.artistInfo === undefined || props.artistInfo === null)) {
 
             let slicedContent = props.artistInfo.artist.bio.content.slice(0, props.artistInfo.artist.bio.content.indexOf("<a href"))
             setContent(slicedContent)
